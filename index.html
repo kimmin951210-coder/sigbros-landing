@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>춘식이 삼식이</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* 전체 랜딩페이지 */
+    .wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 891px;
+      margin: 0 auto;
+    }
+
+    /* PC 화면에서는 너무 크게 퍼지지 않게 */
+    @media (min-width: 900px) {
+      .wrapper {
+        width: 45%;
+        max-width: 720px;
+      }
+    }
+
+    /* 랜딩 이미지 */
+    .wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* 클릭 영역 공통 */
+    .click-zone {
+      position: absolute;
+      left: 12.2%;
+      width: 75.6%;
+
+      display: block;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    /* 1. 생방송 공지방 */
+    .zone1 {
+      top: 57.4%;
+      height: 10.1%;
+    }
+
+    /* 2. 카카오톡 문의 */
+    .zone2 {
+      top: 66.3%;
+      height: 10.0%;
+    }
+
+    /* 3. 텔레그램 문의 */
+    .zone3 {
+      top: 76%;
+      height: 10.0%;
+    }
+
+    /* 4. 식이형제 가족방 */
+    .zone4 {
+      top: 86%;
+      height: 9.4%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- 랜딩 이미지 -->
+    <img
+      src="./landing.png"
+      alt="춘식이 삼식이 랜딩페이지"
+    />
+
+    <!-- 1. 생방송 공지방 -->
+    <a
+      class="click-zone zone1"
+      href="https://telegram.me/samchon2"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="생방송 공지방">
+    </a>
+
+    <!-- 2. 카카오톡 문의 -->
+    <a
+      class="click-zone zone2"
+      href="https://open.kakao.com/o/shvSSGzc"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="카카오톡 문의">
+    </a>
+
+    <!-- 3. 텔레그램 문의 -->
+    <a
+      class="click-zone zone3"
+      href="https://telegram.me/storyinquiry"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="텔레그램 문의">
+    </a>
+
+    <!-- 4. 식이형제 가족방 -->
+    <a
+      class="click-zone zone4"
+      href="https://open.kakao.com/o/gJqGHqLi"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="식이형제 가족방">
+    </a>
+
+  </div>
+
+</body>
+</html>
