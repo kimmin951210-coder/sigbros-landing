@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>춘식이 삼식이</title>
+  <title>식이형제 라이브</title>
 
   <style>
     * {
@@ -23,7 +23,6 @@
       justify-content: center;
     }
 
-    /* 전체 랜딩페이지 */
     .wrapper {
       position: relative;
       width: 100%;
@@ -31,7 +30,6 @@
       margin: 0 auto;
     }
 
-    /* PC 화면에서는 너무 크게 퍼지지 않게 */
     @media (min-width: 900px) {
       .wrapper {
         width: 45%;
@@ -39,46 +37,45 @@
       }
     }
 
-    /* 랜딩 이미지 */
     .wrapper img {
+      display: block;
       width: 100%;
       height: auto;
-      display: block;
     }
 
     /* 클릭 영역 공통 */
     .click-zone {
       position: absolute;
-      left: 12.2%;
-      width: 75.6%;
+      left: 11.5%;
+      width: 77%;
 
       display: block;
       cursor: pointer;
       z-index: 10;
     }
 
-    /* 1. 생방송 공지방 */
+    /* 1. 지금 생방송 보기 */
     .zone1 {
-      top: 57.4%;
-      height: 10.1%;
+      top: 55.7%;
+      height: 8.6%;
     }
 
-    /* 2. 카카오톡 문의 */
+    /* 2. 지난 방송 다시보기 */
     .zone2 {
-      top: 66.3%;
-      height: 10.0%;
+      top: 64.8%;
+      height: 8.6%;
     }
 
-    /* 3. 텔레그램 문의 */
+    /* 3. 오늘의 방송 일정 */
     .zone3 {
-      top: 76%;
-      height: 10.0%;
+      top: 73.9%;
+      height: 8.6%;
     }
 
-    /* 4. 식이형제 가족방 */
+    /* 4. 커뮤니티 문의 */
     .zone4 {
-      top: 86%;
-      height: 9.4%;
+      top: 83.3%;
+      height: 8.6%;
     }
   </style>
 </head>
@@ -89,44 +86,44 @@
 
     <!-- 랜딩 이미지 -->
     <img
-      src="./landing.png"
-      alt="춘식이 삼식이 랜딩페이지"
+      src="./landing.jpg"
+      alt="식이형제 라이브 랜딩페이지"
     />
 
-    <!-- 1. 생방송 공지방 -->
+    <!-- 1. 지금 생방송 보기 -->
     <a
       class="click-zone zone1"
-      href="https://telegram.me/samchon2"
+      href="https://open.kakao.com/o/g97TJLJi"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="생방송 공지방">
+      aria-label="지금 생방송 보기">
     </a>
 
-    <!-- 2. 카카오톡 문의 -->
+    <!-- 2. 지난 방송 다시보기 -->
     <a
       class="click-zone zone2"
-      href="https://open.kakao.com/o/shvSSGzc"
+      href="https://www.youtube.com/@%E8%9F%B9%E9%BB%84%E5%AE%9D_Ixbn"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="카카오톡 문의">
+      aria-label="지난 방송 다시보기">
     </a>
 
-    <!-- 3. 텔레그램 문의 -->
+    <!-- 3. 오늘의 방송 일정 -->
     <a
       class="click-zone zone3"
       href="https://telegram.me/storyinquiry"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="텔레그램 문의">
+      aria-label="오늘의 방송 일정">
     </a>
 
-    <!-- 4. 식이형제 가족방 -->
+    <!-- 4. 커뮤니티 문의 -->
     <a
       class="click-zone zone4"
-      href="https://open.kakao.com/o/gJqGHqLi"
+      href="https://open.kakao.com/o/shvSSGzc"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="식이형제 가족방">
+      aria-label="커뮤니티 문의">
     </a>
 
   </div>
