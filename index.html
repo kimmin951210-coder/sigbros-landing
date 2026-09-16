@@ -6,6 +6,29 @@
 
   <title>식이형제 라이브</title>
 
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MFXK7GSLK1"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-MFXK7GSLK1');
+
+    function trackClick(eventName, buttonName, linkUrl) {
+      gtag('event', eventName, {
+        event_category: 'landing_button',
+        button_name: buttonName,
+        link_url: linkUrl,
+        transport_type: 'beacon'
+      });
+    }
+  </script>
+
   <style>
     * {
       box-sizing: border-box;
@@ -48,7 +71,6 @@
       position: absolute;
       left: 11.5%;
       width: 77%;
-
       display: block;
       cursor: pointer;
       z-index: 10;
@@ -96,7 +118,12 @@
       href="https://open.kakao.com/o/g97TJLJi"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="지금 생방송 보기">
+      aria-label="지금 생방송 보기"
+      onclick="trackClick(
+        'live_click',
+        '지금 생방송 보기',
+        this.href
+      )">
     </a>
 
     <!-- 2. 지난 방송 다시보기 -->
@@ -105,7 +132,12 @@
       href="https://www.youtube.com/@%E8%9F%B9%E9%BB%84%E5%AE%9D_Ixbn"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="지난 방송 다시보기">
+      aria-label="지난 방송 다시보기"
+      onclick="trackClick(
+        'replay_click',
+        '지난 방송 다시보기',
+        this.href
+      )">
     </a>
 
     <!-- 3. 오늘의 방송 일정 -->
@@ -114,7 +146,12 @@
       href="https://telegram.me/storyinquiry"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="오늘의 방송 일정">
+      aria-label="오늘의 방송 일정"
+      onclick="trackClick(
+        'schedule_click',
+        '오늘의 방송 일정',
+        this.href
+      )">
     </a>
 
     <!-- 4. 커뮤니티 문의 -->
@@ -123,7 +160,12 @@
       href="https://open.kakao.com/o/s266v8Ag"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="커뮤니티 문의">
+      aria-label="커뮤니티 문의"
+      onclick="trackClick(
+        'community_click',
+        '커뮤니티 문의',
+        this.href
+      )">
     </a>
 
   </div>
